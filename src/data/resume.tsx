@@ -53,51 +53,59 @@ export const DATA = {
 
   projects: [
     {
-      title: "duckyvid",
-      href: "https://github.com/Sprechender/compressit.py",
-      dates: "Dec 2024 - Now",
+      title: "imageconvert",
+      href: "https://marcelschreiber.de/imageconvert",
+      dates: "Nov 2024",
       active: true,
       description:
-        "Developing a modular non linear video editing software.",
+        "Developed a web app that converts images to different formats",
       technologies: [
-        "Coming Soon",
+        "NodeJS",
+        "Next.js",
+        "Tailwind CSS",
       ],
       links: [
         {
           type: "Web",
-          href: "https://duckyvid.github.io/",
+          href: "https://marcelschreiber.de/imageconvert",
           icon: <Globe className="icons" />,
         },
         {
           type: "Source",
-          href: "https://github.com/duckyvid",
-          icon: <Github className="icons" />,
-        },
-      ],
-      image: "/duckyvid.png",
-      video: "",
-    },
-    {
-      title: "compressit.py",
-      href: "https://github.com/Sprechender/compressit.py",
-      dates: "Nov 2024 - Now",
-      active: true,
-      description:
-        "Developed a python program to compress images and video to save disk space",
-      technologies: [
-        "Python",
-        "FFmpeg",
-        "Tkinter",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Sprechender/compressit.py",
+          href: "https://github.com/Sprechender/imageconvert",
           icon: <Github className="icons" />,
         },
       ],
       image: "",
-      video: "/demopycompress.mp4",
+      video: "/demo_imageconvert.mp4",
+    },
+    {
+      title: "videocompress",
+      href: "https://marcelschreiber.de/videocompress",
+      dates: "Nov 2024",
+      active: true,
+      description:
+        "Developed a web app that compresses videos with ffmpeg (WebAssembly)",
+      technologies: [
+        "NodeJS",
+        "Next.js",
+        "Tailwind CSS",
+        "FFmpeg",
+      ],
+      links: [
+        {
+          type: "Web",
+          href: "https://marcelschreiber.de/videocompress",
+          icon: <Globe className="icons" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Sprechender/videocompress",
+          icon: <Github className="icons" />,
+        },
+      ],
+      image: "",
+      video: "/demo_videocompress.mp4",
     },
   ],
 } as const;
