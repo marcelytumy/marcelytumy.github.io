@@ -23,6 +23,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/socials", icon: Globe, label: "Socials" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
@@ -33,12 +34,6 @@ export const DATA = {
         url: "https://github.com/Sprechender",
         icon: Github,
 
-        navbar: true,
-      },
-      YouTube: {
-        name: "YouTube",
-        url: "https://youtube.com/@SprechenderTV",
-        icon: Youtube,
         navbar: true,
       },
       email: {
