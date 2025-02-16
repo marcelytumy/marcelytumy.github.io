@@ -120,8 +120,8 @@ export const DATA = {
           icon: <Play className="icons" />,
         },
       ],
-      image: "",
-      video: "/demo_videocompress.mp4",
+      image: "/frostbound-demo-screenshot.webp",
+      video: "",
     },
   ],
 } as const;
