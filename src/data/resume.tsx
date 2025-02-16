@@ -1,4 +1,4 @@
-import { HomeIcon, NotebookIcon, Github, Youtube, Mail, Globe } from "lucide-react";
+import { HomeIcon, NotebookIcon, Github, Play, Mail, Globe } from "lucide-react";
 
 export const DATA = {
   name: "Marcel Schreiber (Sprechender)",
@@ -24,7 +24,6 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/socials", icon: Globe, label: "Socials" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "sprechender@proton.me",
@@ -97,6 +96,28 @@ export const DATA = {
           type: "Source",
           href: "https://github.com/Sprechender/videocompress",
           icon: <Github className="icons" />,
+        },
+      ],
+      image: "",
+      video: "/demo_videocompress.mp4",
+    },
+    {
+      title: "Frostbound",
+      href: "https://ytumy.itch.io/frostbound-demo",
+      dates: "Feb 2025",
+      active: true,
+      description:
+        "Developed a game for a game jam",
+      technologies: [
+        "Unity",
+        "C#",
+        ".NET",
+      ],
+      links: [
+        {
+          type: "Play",
+          href: "https://ytumy.itch.io/frostbound-demo/",
+          icon: <Play className="icons" />,
         },
       ],
       image: "",
