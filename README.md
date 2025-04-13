@@ -1,23 +1,49 @@
-# Sprechender's Portfolio
+# Portfolio Site
 
-This is the source code for my personal portfolio and blog, built with Next.js, Tailwind CSS, and TypeScript.
+## Project info
 
-This is a modified version of the template my Dillion Verma (or the creator of MagicUI)
+**URL**: https://marcel-schreiber-portfolio.com
 
-## Tech stuff
+## How can I edit this code?
 
-- **Next.js**: React framework for server-side rendering and static site generation.
-- **Tailwind CSS**: Utility-first CSS framework for styling.
-- **TypeScript**: Typed JavaScript for better developer experience.
-- **MDX**: Markdown with JSX for writing blog posts.
-- **Radix UI**: Accessible UI components.
-- **Framer Motion**: Animations and transitions.
-- **Lucide Icons**: Beautifully crafted icons.
+There are several ways of editing your application.
 
-## Contributing
+**Use your preferred IDE**
 
-Contributions are welcome! Please open an issue or submit a pull request.
+You can work locally using your own IDE by cloning this repo and pushing changes.
 
-## License
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+You can deploy this project using any static site hosting service like Vercel, Netlify, or GitHub Pages.
+
+## Can I connect a custom domain to my project?
+
+Yes, you can connect a custom domain to your deployed project through your hosting provider's domain settings.
