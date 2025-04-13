@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Github, Youtube, Twitch, Mail, MessageSquare } from 'lucide-react';
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@/components/ui/separator.tsx";
 
 const SocialLink = ({ 
   icon, 
