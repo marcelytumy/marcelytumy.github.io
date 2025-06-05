@@ -56,21 +56,21 @@ const Projects = () => {
       title: "PaletteLab",
       description: "an very simple color palette generator for web developers.",
       image: "/screenshots/palettelab.webp",
-      link: "https://marcelschreiber.de/palettelab",
+      link: "https://marcelytumy.github.io/palettelab",
       techs: ["Vite", "Tailwind", "TypeScript"]
     },
     {
       title: "imageconvert",
       description: "imageconvert is a simple image converter",
       image: "/screenshots/imageconvert.webp",
-      link: "https://marcelschreiber.de/imageconvert",
+      link: "https://marcelytumy.github.io/imageconvert",
       techs: ["Next.js", "Tailwind", "TypeScript"]
     },
     {
       title: "videocompress",
       description: "videocompress is an highly simpler ffmpeg wrapper",
       image: "/screenshots/videocompress.webp",
-      link: "https://marcelschreiber.de/videocompress",
+      link: "https://marcelytumy.github.io/videocompress",
       techs: ["Next.js", "Tailwind", "TypeScript"]
     },
     {
