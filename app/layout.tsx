@@ -12,6 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = "width=device-width, initial-scale=1";
+
 export const metadata: Metadata = {
   title: "marcelytumy",
   description: "Experienced developer specializing in React, TypeScript, and modern web technologies. Building responsive, accessible, and performant web applications with clean code and user-focused design.",
@@ -43,7 +45,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  viewport: "width=device-width, initial-scale=1",
   alternates: {
     canonical: "https://marcelytumy.github.io",
   },

@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Sun, Moon, ExternalLink, Github, Menu, X } from 'lucide-react';
+import { ExternalLink, Github, Menu, X } from 'lucide-react';
+import Link from "next/link";
 
 interface Skill {
   name: string;
@@ -126,21 +127,21 @@ export default function Home() {
       {/* Navigation */}
       <nav className="mb-6 sm:mb-8 text-sm w-full" role="navigation" aria-label="Main navigation">
         <div className="flex justify-between items-center">
-          <a className="font-bold hover:underline focus:underline focus:outline-none text-base sm:text-sm" href="/" aria-label="Home">
+            <Link className="font-bold hover:underline focus:underline focus:outline-none text-base sm:text-sm" href="/" aria-label="Home">
             ytumy.de
-          </a>
+            </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden sm:flex items-center space-x-4">
-            <a href="#projects" className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1">
+            <Link href="#projects" className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1">
               projects
-            </a>
-            <a href="#skills" className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1">
+            </Link>
+            <Link href="#skills" className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1">
               skills
-            </a>
-            <a href="#contact" className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1">
+            </Link>
+            <Link href="#contact" className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1">
               contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Navigation Button */}
@@ -159,27 +160,27 @@ export default function Home() {
         {isMobileMenuOpen && (
           <div className="sm:hidden mt-4 p-4 rounded-lg border bg-neutral-800 border-neutral-700">
             <div className="flex flex-col space-y-3">
-              <a
+              <Link
                 href="#projects"
                 className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1 py-2 text-base"
                 onClick={closeMobileMenu}
               >
                 projects
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#skills"
                 className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1 py-2 text-base"
                 onClick={closeMobileMenu}
               >
                 skills
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#contact"
                 className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1 py-2 text-base"
                 onClick={closeMobileMenu}
               >
                 contact
-              </a>
+              </Link>
             </div>
           </div>
         )}
@@ -188,7 +189,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="mb-8 sm:mb-12 w-full" aria-labelledby="hero-heading">
         <div className="flex items-start justify-between mb-4">
-          <h1 id="hero-heading" className="text-2xl sm:text-3xl font-bold">Hello, I'm Marcel</h1>
+          <h1 id="hero-heading" className="text-2xl sm:text-3xl font-bold">Hello, I&apos;m Marcel</h1>
           <button
             onClick={toggleTldr}
             className={`text-xs px-2 py-1 rounded border transition-colors focus:outline-none focus:ring-2 focus:ring-current border-neutral-600 hover:bg-neutral-800 ${isTldr ? 'bg-neutral-700' : ''}`}
@@ -209,7 +210,7 @@ export default function Home() {
                 I enjoy turning complex problems into simple, beautiful, and intuitive designs.
               </p>
               <p className="leading-relaxed text-sm sm:text-base text-neutral-300">
-                When I'm not coding, you can find me exploring new tech or playing video games.
+                When I&apos;m not coding, you can find me exploring new tech or playing video games.
               </p>
             </>
           )}
@@ -257,7 +258,7 @@ export default function Home() {
               <div className="p-2 sm:p-4 flex flex-col flex-grow">
                 <div className="flex items-start justify-between mb-1 sm:mb-2 gap-1 sm:gap-2">
                   <h3 className="font-semibold text-xs sm:text-base flex-1">
-                    <a
+                    <Link
                       href={project.link}
                       className="hover:underline focus:no-underline focus:outline-none focus:ring-2 focus:ring-current rounded inline-flex items-center gap-1 py-1"
                       target="_blank"
@@ -267,10 +268,10 @@ export default function Home() {
                       {project.title}
                       <ExternalLink size={10} className="sm:hidden" aria-hidden="true" />
                       <ExternalLink size={12} className="hidden sm:inline" aria-hidden="true" />
-                    </a>
+                    </Link>
                   </h3>
                   {project.github && (
-                    <a
+                    <Link
                       href={project.github}
                       className="text-xs underline hover:underline focus:no-underline focus:outline-none focus:ring-1 focus:ring-current rounded px-1 py-1 flex items-center gap-1 whitespace-nowrap text-neutral-400 hover:text-white"
                       target="_blank"
@@ -280,7 +281,7 @@ export default function Home() {
                       <Github size={10} className="sm:hidden" aria-hidden="true" />
                       <Github size={12} className="hidden sm:inline" aria-hidden="true" />
                       <span className="hidden sm:inline">source</span>
-                    </a>
+                    </Link>
                   )}
                 </div>
                 <p className="text-xs mb-2 sm:mb-3 flex-grow text-neutral-400">
@@ -349,12 +350,12 @@ export default function Home() {
         <p className="mb-4 text-sm sm:text-base">
           Interested in working together or have a question? Feel free to reach out!
         </p>
-        <a
+        <Link
           href="mailto:sprechender@proton.me"
           className="inline-block border px-4 py-3 text-sm rounded transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 w-full sm:w-auto text-center sm:text-left bg-white text-black border-white hover:bg-neutral-200 focus:ring-white focus:ring-offset-neutral-800"
         >
           Send Email
-        </a>
+        </Link>
       </div>
   </section>
 
