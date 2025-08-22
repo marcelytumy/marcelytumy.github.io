@@ -362,8 +362,9 @@ export default function Home() {
     {/* Footer */}
     <footer className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t w-full border-neutral-700">
       <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm space-y-4 sm:space-y-0 text-neutral-400">
-        <p className="text-center sm:text-left">&copy; {currentYear} ytumy.de (marcelytumy) All rights reserved.
+        <p className="text-center sm:text-left">&copy; {currentYear} ytumy.de (marcelytumy) All rights reserved.</p>
         <div className="space-x-4">
+
           <Link href="https://debian.ytumy.de/">
           <button
             className="hover:underline focus:underline focus:outline-none focus:ring-2 focus:ring-current rounded px-1 py-1 hover:text-white"
